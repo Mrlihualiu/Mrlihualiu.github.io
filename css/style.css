@@ -1,0 +1,100 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-color: #78c7cc;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #666;
+}
+div a:hover{
+	color: blue;
+}
+.me img{
+	width: 120px; 
+	height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top: 100px;
+    left: -100px;
+}
+h2{
+	margin: 0 0 50px 80px;
+}
+header{
+	position: fixed;
+	top: 130px;
+	right: 50px;
+	z-index: 666;
+}
+header a{
+	font-size: 22px;
+}
+header li{
+	padding: 5px 0;
+}
+header a:hover{
+    text-decoration: underline;
+}
+.active{
+	color: #fff;
+}
+.subnav{
+	position: relative;
+	width: 800px;
+	height: 580px;
+	margin: 0 auto;
+	z-index: 100;
+	padding-top: 100px;
+	margin: 0 auto;
+}
+.aboutme{
+	}
+.background{
+	width: 410px;
+	height: 580px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 1;
+}
+dt,dd{
+	float: left;
+}
+dt{
+	margin-right: 10px; 
+}
+dl{
+	clear: both;
+	overflow: hidden;
+	margin-left: 100px;
+	padding: 6px 0 6px 20px;
+}
+.why{
+}
+.why p{
+	display: inline-block;
+}
+.why div{
+	margin: 50px 0;
+	border: 2px solid #666;
+	padding: 10px;
+	border-radius: 5px;
+}
+.workli{
+	padding: 10px;
+	margin: 40px 0;
+	border: 2px solid #666;
+	border-radius: 5px;
+}
+.workli h3{
+	padding: 10px 0;
+}
+.contact div{
+	padding: 10px;
+}
