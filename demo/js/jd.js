@@ -43,7 +43,9 @@ function lunbo(){
 	var pics = $("#lunbo-pic li img");
 	var nums = $("#num li");
 	var i = 0;
-	var timer = setInterval(function(){
+	var timer = null;
+	timer = setInterval(change,1000);
+	function change(){
 		if(i == 6){
 			i = 0;
 		}
@@ -55,7 +57,7 @@ function lunbo(){
 		}
 		nums.eq(i).addClass("active").siblings().removeClass("active");
 		i++;
-	},1000)
+	}
 	$("#lunbo").hover(
 		function(){
 		    clearInterval(timer);
@@ -80,14 +82,22 @@ function lunbo(){
 	});
 	//左右切换
 	$("#next").click(function(){
-		var nowpic = $("#lunbo-pic li img:visible");
-		nowpic.hide();
-		var num = nowpic.index()+1;
-		if(num == 6){
-			num = 0;
-		}
+		var nownum = $("#num li.active");
+		var index = nownum.index();
+		num = index+1;
+		num = num>5?0:num;
+		pics.eq(index).hide();
 		pics.eq(num).show();
-        nums.eq(num).addClass("active").siblings().removeClass("active");
+		nums.eq(num).addClass("active").siblings().removeClass("active");
+	});
+	$("#upper").click(function(){ 
+		var nownum = $("#num li.active");
+		var index = nownum.index();
+		num = index-1;
+		num = num<0?5:num;
+		pics.eq(index).hide();
+		pics.eq(num).show();
+		nums.eq(num).addClass("active").siblings().removeClass("active");
 	});
 }
 
