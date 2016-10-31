@@ -13,6 +13,9 @@ a{
 a,span{
 	color: #999;
 }
+img{
+	border: none;
+}
 li{
 	list-style: none;
 }
