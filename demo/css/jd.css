@@ -9,6 +9,9 @@ body{
 	margin: 0;
 	width: 1360px;
 }
+img{
+	border: none;
+}
 a{
 	color: #666;
 	text-decoration: none;
@@ -590,7 +593,7 @@ a{
 	border-top: 3px solid #c81623;
 	border-left: 1px solid #c81623;
 	border-right: 1px solid #c81623;
-	border-bottom: 2px solid #fff;
+	border-bottom: 3px solid #fff;
 	color: #c81623;
 }
 .xf-show {
