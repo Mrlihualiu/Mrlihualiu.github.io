@@ -7,7 +7,7 @@ function change(){
 	    var top = $(document).scrollTop();
 	    console.log(top);
 	    for(var i=0;i<fch.length;i++){
-	    	if(top>=i*680 && top<(i+1)*680){
+	    	if(top>=i*600 && top<(i+1)*600){
                 fch.eq(i).addClass("active");
                 for(var j=0;j<fch.length;j++){
                 	if(i != j){

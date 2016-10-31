@@ -3,7 +3,7 @@
 	margin: 0;
 }
 body{
-	background-color: #78c7cc;
+	background-color: #fff;
 }
 li{
 	list-style: none;
@@ -20,8 +20,8 @@ div a:hover{
 	height: 120px;
     border-radius: 50%;
     position: absolute;
-    top: 100px;
-    left: -100px;
+    top: 10px;
+    left: 10px;
 }
 h2{
 	margin: 0 0 50px 80px;
@@ -42,26 +42,25 @@ header a:hover{
     text-decoration: underline;
 }
 .active{
-	color: #fff;
+	text-decoration: underline;
+	color: #2a2a2a;
 }
 .subnav{
+	display: block;
+	background: #78c7cc;
 	position: relative;
 	width: 800px;
-	height: 580px;
-	margin: 0 auto;
-	z-index: 100;
-	padding-top: 100px;
-	margin: 0 auto;
+	height: 100%;
+	margin: 50px auto;
+	z-index: 1;
+	padding: 100px 0 100px 0;
+	border-radius: 20px;
 }
 .aboutme{
+   margin-top: 100px;
 	}
-.background{
-	width: 410px;
-	height: 580px;
-	position: absolute;
-	right: 0;
-	top: 0;
-	z-index: 1;
+.aboutme h2{
+	margin: 50px 0 0 50px
 }
 dt,dd{
 	float: left;
@@ -72,29 +71,133 @@ dt{
 dl{
 	clear: both;
 	overflow: hidden;
-	margin-left: 100px;
+	margin-left: 150px;
 	padding: 6px 0 6px 20px;
 }
-.why{
+.demo ul{
+	margin-left: 60%;
 }
-.why p{
-	display: inline-block;
+.demo li{
+	/*float: left;*/
+	padding: 20px 0;
+	width: 100px;
+	position: relative;
+	
 }
-.why div{
-	margin: 50px 0;
-	border: 2px solid #666;
-	padding: 10px;
-	border-radius: 5px;
+.demo li span{
+	width: 100px;
+	display: block;
+	position: absolute;
+	top: 40%;
+	right: 150%;
+	font-weight: bold;
+}
+.demo li a{
+   font-size: 25px;
+   color: blue;
+   display: block;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 50%;
+	border:1px solid #2a2a2a;
+    background: #999;
+    text-align: center;
+}
+.work{
+	padding-top: 100px;
 }
 .workli{
+	width: 80%;
 	padding: 10px;
 	margin: 40px 0;
+	margin-left: 10%;
 	border: 2px solid #666;
 	border-radius: 5px;
 }
 .workli h3{
 	padding: 10px 0;
 }
+.workli ul li{
+	padding: 5px 0;
+}
+.workli .web{
+	margin-left: 100px;
+}
 .contact div{
 	padding: 10px;
+}
+.workli span{
+	font-weight: bold;
+	color: #2a2a2a;
+}
+.nav{
+	z-index: 55;
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	top: 0;
+	border-bottom: 1px solid #555;
+	background: #777777;
+}
+.nav span{
+    position: absolute;
+	top: 15px;
+	right: 10%;
+}
+.nav h2{
+	font-size: 28px;
+	position: absolute;
+	top: 5px;
+	right: 20%;
+}
+.nav ul{
+	margin-left: 100px;
+}
+.nav ul li{
+	float: left;
+	padding: 15px 50px 0 50px;
+	position: relative;
+}
+.nav ul li a{
+	color: #000;
+}
+.nav ul li i{
+	position: absolute;
+	top: 15px;
+	left: 10px;
+}
+
+.phone{position: relative;display: block;width: 9px;height: 13px;background: #2a2a2a;border-radius: 2px;-webkit-border-radius: 2px;-moz-border-radius: 2px;border-top: 4px solid #999;border-bottom: 5px solid #999;border-left: 2px solid #999;border-right: 2px solid #999;}
+
+.phone:before{content: '';width: 5px;height: 1px;border-radius: 30%;-webkit-border-radius: 30%;-moz-border-radius: 30%;background: #2a2a2a;position: absolute;top: -2px;left: 2px;}
+
+.phone:after{content: '';width: 3px;height: 3px;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;background: #2a2a2a;position: absolute;top: 14px;left: 3px;}
+
+
+.e-mail{
+	display: block;
+	position: absolute;
+	width: 20px;
+	height: 15px;
+	border-radius: 3px;
+	background: #2a2a2a;
+}
+.e-mail::before,.e-mail::after{
+	content: '';
+	border: solid transparent;
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 0;
+}
+.e-mail::before{
+	border-width: 10px;
+	border-top-color: #fff;
+    left: 0px;
+}
+.e-mail::after{
+	border-width: 9px;
+	border-top-color: #2a2a2a;
+	left: 1px;
 }
