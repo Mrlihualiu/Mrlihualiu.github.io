@@ -9,10 +9,6 @@ body{
 	margin: 0;
 	width: 1360px;
 }
-a{
-	color: #666;
-	text-decoration: none;
-}
 #sidebar{
 	position: fixed;
 	top: 200px;
@@ -71,15 +67,10 @@ a{
 	border: 1px solid #f1f1f1;
 	border-top: 0;
 }
-.header .header-nav{
-	margin-right: 100px;
-}
-.header .header-nav li{
-	
-}
 .header .city li{
 	text-align: center;
 	width: 60px;
+	border-right: 0;
 	height: 30px;
 	line-height: 30px;
 }
@@ -89,7 +80,7 @@ a{
 .header a{
 	font-size: 13px;
 }
-.header .header-nav .zhuche{
+.header .zhuche{
 	color: #c81623;
 }
 .header ul{
@@ -105,10 +96,9 @@ a{
 	line-height: 37px;
 	float: left;
 	list-style: none;
+	border-right: 1px solid #dddddd;
 }
-.header .header-nav a{
-	display: block;
-	width: 70px;
+.header ul li a,.removea{
 	text-decoration: none;
 	color: #666666;
 	padding: 2px 5px;
@@ -119,9 +109,6 @@ a{
     height: 37px;
 	line-height: 37px;
 	margin: 0 0 0 80px;
-	text-decoration: none;
-	color: #666666;
-	padding: 2px 5px;
 }
 .removea:hover{
 	background: #fff;
@@ -572,7 +559,6 @@ a{
 	border: 1px solid #ededed;
 	margin: 0;
 	padding: 0;
-	cursor: pointer;
 }
 .zi-nav-nav li{
 	display: inline-block;
@@ -592,15 +578,6 @@ a{
 	border-right: 1px solid #c81623;
 	border-bottom: 2px solid #fff;
 	color: #c81623;
-}
-.xf-show {
-	position: relative;
-}
-.xf-show .p-show-1f-1{
-	display: block;
-}
-.p-show-1f{
-	display: none;
 }
 .xf-show .show-pic{
     margin: 0;
@@ -709,21 +686,3 @@ a{
 .service .m .flooter-pic a{
 	border-right: 0;
 }
-/*//小图标*/
-.spread{
-	position: relative;
-}
- .spread:before,.spread:after{
-	border: solid transparent;
-    content: ' ';
-    height: 0;
-    top: 30%;
-    width: 0;
-    position: absolute;
-}
-.spread:before{border-width: 6px;
-    border-top-color: #000;
-left: 2px;}
-.spread:after{border-width: 4px;
-    border-top-color: #f1f1f1;
-left: 4px;}

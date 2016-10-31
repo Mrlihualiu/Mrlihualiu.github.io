@@ -4,7 +4,6 @@ $(function(){
 	carshow("#car","#car-show");
 	lunbo();
 	lunbo2();
-	changeNav();
 });
 //侧栏楼层导航的显示与隐藏
 function sidebarShow(){
@@ -103,32 +102,17 @@ function lunbo(){
 }
 
 function lunbo2(){
-	var lunbo2ul = $("#lunbo2-ul");
 	$("#btnL").click(function(){
-		if(!lunbo2ul.is(":animated")){
-			if(lunbo2ul.css("left") == "0px"){
-	    	lunbo2ul.css("left","-2016px");
-	        }		
-		lunbo2ul.animate({left:"+=252px"},500);
-		}
-	    
+	    if($("#lunbo2-ul").css("left") == "0px"){
+	    	$("#lunbo2-ul").css("left","-2016px");
+	    }		
+		$("#lunbo2-ul").animate({left:"+=252px"},800);
 	});
 	$("#btnR").click(function(){	
-		if(!lunbo2ul.is(":animated")){
-			if(lunbo2ul.css("left") == "-3024px"){
-	    	lunbo2ul.css("left","-1008px");
-	        }		
-		lunbo2ul.animate({left:"-=252px"},500);
-		}
-	    
-	});
-}
-function changeNav(){
-	var lies = $(".1f .zi-nav-nav li");
-	lies.hover(function(){
-		var num = $(this).index();
-		$(this).addClass("zi-nav-active").siblings().removeClass("zi-nav-active");
-		$(".p-show-1f").eq(num).show().siblings().hide();
+	    if($("#lunbo2-ul").css("left") == "-3024px"){
+	    	$("#lunbo2-ul").css("left","-1008px");
+	    }		
+		$("#lunbo2-ul").animate({left:"-=252px"},800);
 	});
 }
 
